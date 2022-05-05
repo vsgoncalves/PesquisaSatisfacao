@@ -87,19 +87,19 @@ input#rate-11:checked ~ label{
     color: rgb(235, 21, 21);   
 }
 
-#rate-1:checked ~ form header:before{
+#rate-1:checked ~ header:before{
   content: "Muito ruim";
 }
-#rate-2:checked ~ form header:before{
+#rate-2:checked ~ header:before{
   content: "Ruim ";
 }
-#rate-3:checked ~ form header:before{
+#rate-3:checked ~ header:before{
   content: "Satisfatório ";
 }
-#rate-4:checked ~ form header:before{
+#rate-4:checked ~ header:before{
   content: "Muito Bom ";
 }
-#rate-5:checked ~ form header:before{
+#rate-5:checked ~ header:before{
   content: "Excelente";
 }
 .container form{
@@ -162,11 +162,7 @@ form .btn button:hover{
 
 
 
-
-
-
-.numero1 {
-  background-color:#d62128;
+.numero {
   width: 30px;
   height:30px;
   align-items: center;
@@ -174,86 +170,44 @@ form .btn button:hover{
   text-align: center;
 }
 
+.numero1 {
+  background-color:#d62128;
+}
 
 .numero2 {
   background-color:#ea5426;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .numero3 {
   background-color:#ed6f25;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .numero4 {
   background-color:#f7a726;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .numero5 {
   background-color:#fec929;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .numero6 {
   background-color:#ecdc0b;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .numero7 {
   background-color:#e5e244;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .numero8 {
   background-color:#c4d334;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .numero9 {
   background-color:#afcb3a;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .numero10 {
   background-color:#68b64f;
-  width: 30px;
-  height:30px;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
  }
 
  .Perguntas {
