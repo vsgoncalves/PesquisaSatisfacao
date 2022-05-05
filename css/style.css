@@ -1,11 +1,13 @@
  
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 html,body{
   display: grid;
   height: 100%;
@@ -16,6 +18,7 @@ html,body{
     font-size: 12px;
     color: #868686;
 }
+
 .container{
   position: relative;
   width: 390px;
@@ -27,14 +30,17 @@ html,body{
   justify-content: center;
   flex-direction: column;
 }
+
 .container .post{
   display: none;
 }
+
 .container .text{
   font-size: 25px;
   color: #666;
   font-weight: 500;
 }
+
 .container .edit{
   position: absolute;
   right: 10px;
@@ -44,18 +50,22 @@ html,body{
   font-weight: 500;
   cursor: pointer;
 }
+
 .container .edit:hover{
   text-decoration: underline;
 }
+
 .container .star-widget input{
   display: none;
 }
 
-.container .star-widget2 input{
+.container .rate-widget2 input{
   display: none;
 }
 
-
+.container .text-widget3 input{
+  display: none;
+}
 
 .star-widget label{
   font-size: 40px;
@@ -65,50 +75,71 @@ html,body{
   transition: all 0.2s ease;
   margin-bottom: 10px;
 } 
-.star-widget2 label{
+
+.rate-widget2 label{
   font-size: 40px;
   color: rgb(255, 255, 255);
   padding: 1px;
   float: right;
   transition: all 0.2s ease;
 }
+
+.text-widget3 label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+} 
+
 input:not(:checked) ~ label:hover,
 input:not(:checked) ~ label:hover ~ label{
   color: #fd4;
 }
+
 input:checked ~ label{
   color: #fd4;
 }
-input#rate-5:checked ~ label{
+
+input#star-5:checked ~ label{
   color: #fe7;
   text-shadow: 0 0 20px #952;
 }
+
 input#rate-11:checked ~ label{
     color: rgb(235, 21, 21);   
 }
 
-#rate-1:checked ~ header:before{
+#star-1:checked ~ header:before{
   content: "Muito ruim";
 }
-#rate-2:checked ~ header:before{
+
+#star-2:checked ~ header:before{
   content: "Ruim ";
 }
-#rate-3:checked ~ header:before{
+
+#star-3:checked ~ header:before{
   content: "Satisfatório ";
 }
-#rate-4:checked ~ header:before{
+
+#star-4:checked ~ header:before{
   content: "Muito Bom ";
 }
-#rate-5:checked ~ header:before{
+
+#star-5:checked ~ header:before{
   content: "Excelente";
 }
+
 .container form{
   Ddisplay: none;
 }
+
 input:checked ~ form{
   display: block;
   
 }
+
 form header{
   width: 100%;
   font-size: 25px;
@@ -118,31 +149,39 @@ form header{
   text-align:center;
   transition: all 0.2s ease;
 }
+
 form .textarea{
   height: 100px;
   width: 100%;
   overflow: hidden;
 }
+
 form .textarea textarea{
   height: 100%;
   width: 100%;
   outline: none;
   color: #a3a3a1;
-  Bbackground: #222;
   padding: 10px;
   font-size: 12px;
   resize: none;
 }
+
 .textarea textarea:focus{
   Bborder-color: #444;
 }
+ 
+.text{
+ width: 100%;
+ background-color: #000000
 
-  
+}
+
 form .btn{
   height: 45px;
   width: 100%;
   margin: 15px 0;
 }
+
 form .btn button{
   height: 100%;
   width: 100%;
@@ -156,11 +195,10 @@ form .btn button{
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 form .btn button:hover{
   background: #1b1b1b;
 }
-
-
 
 .numero {
   width: 30px;
@@ -211,22 +249,10 @@ form .btn button:hover{
  }
 
  .Perguntas {
-  
   width: 100%;
   height:100%;
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 40px;
  }
 
-
- 
-
- 
-  .numeronota label{
-  font-size: 40px;
-  color: #444;
-  padding: 10px;
-  float: right;
-  transition: all 0.2s ease;
-  margin-bottom: 10px;
-  }
+  

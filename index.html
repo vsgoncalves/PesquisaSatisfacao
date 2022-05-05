@@ -26,16 +26,16 @@
         </div>
         <div><br></div>
         <div class="star-widget">
-          <input type="radio" name="rate" id="rate-5">
-          <label for="rate-5" class="fas fa-star"></label>
-          <input type="radio" name="rate" id="rate-4">
-          <label for="rate-4" class="fas fa-star"></label>
-          <input type="radio" name="rate" id="rate-3">
-          <label for="rate-3" class="fas fa-star"></label>
-          <input type="radio" name="rate" id="rate-2">
-          <label for="rate-2" class="fas fa-star"></label>
-          <input type="radio" name="rate" id="rate-1">
-          <label for="rate-1" class="fas fa-star"></label>
+          <input type="radio" name="star" id="star-5">
+          <label for="star-5" class="fas fa-star"></label>
+          <input type="radio" name="star" id="star-4">
+          <label for="star-4" class="fas fa-star"></label>
+          <input type="radio" name="star" id="star-3">
+          <label for="star-3" class="fas fa-star"></label>
+          <input type="radio" name="star" id="star-2">
+          <label for="star-2" class="fas fa-star"></label>
+          <input type="radio" name="star" id="star-1">
+          <label for="star-1" class="fas fa-star"></label>
           <header></header>
         </div>
         <div class="Perguntas">
@@ -48,35 +48,35 @@
           3 - Em uma escala de 0 a 10, qual a probabilidade de<br> você recomendar a Carbografite a um amigo?
         </div>
         <div><br></div>
-        <div class="star-widget2">
-          <input type="radio" name="rate" id="rate-15">
-          <label for="rate-20" ><div class="numero numero10">10</div></label>
-          <input type="radio" name="rate" id="rate-15">
-          <label for="rate-19" ><div class="numero numero9">9</div></label>
-          <input type="radio" name="rate" id="rate-15">
-          <label for="rate-18" ><div class="numero numero8">8</div></label>
-          <input type="radio" name="rate" id="rate-15">
-          <label for="rate-17" ><div class="numero numero7">7</div></label>
-          <input type="radio" name="rate" id="rate-15">
-          <label for="rate-16" ><div class="numero numero6">6</div></label>
-          <input type="radio" name="rate" id="rate-15">
-          <label for="rate-15" ><div class="numero numero5">5</div></label>
-          <input type="radio" name="rate" id="rate-14">
-          <label for="rate-14" ><div class="numero numero4">4</div></label>
-          <input type="radio" name="rate" id="rate-13">
-          <label for="rate-13" ><div class="numero numero3">3</div></label>
-          <input type="radio" name="rate" id="rate-12">
-          <label for="rate-12" ><div class="numero numero2">2</div></label>
-          <input type="radio" name="rate" id="rate-11">
-          <label for="rate-11" ><div class="numero numero1">1</div></label>
+        <div class="rate-widget2">
+          <input type="radio" name="rate" id="rate-10">
+          <label for="rate-10" ><div class="numero numero10">10</div></label>
+          <input type="radio" name="rate" id="rate-9">
+          <label for="rate-9" ><div class="numero numero9">9</div></label>
+          <input type="radio" name="rate" id="rate-8">
+          <label for="rate-8" ><div class="numero numero8">8</div></label>
+          <input type="radio" name="rate" id="rate-7">
+          <label for="rate-7" ><div class="numero numero7">7</div></label>
+          <input type="radio" name="rate" id="rate-6">
+          <label for="rate-6" ><div class="numero numero6">6</div></label>
+          <input type="radio" name="rate" id="rate-5">
+          <label for="rate-5" ><div class="numero numero5">5</div></label>
+          <input type="radio" name="rate" id="rate-4">
+          <label for="rate-4" ><div class="numero numero4">4</div></label>
+          <input type="radio" name="rate" id="rate-3">
+          <label for="rate-3" ><div class="numero numero3">3</div></label>
+          <input type="radio" name="rate" id="rate-2">
+          <label for="rate-2" ><div class="numero numero2">2</div></label>
+          <input type="radio" name="rate" id="rate-1">
+          <label for="rate-1" ><div class="numero numero1">1</div></label>
         </div>
-        <div><br></div>
         <div class="Perguntas">
           4 - Nota fiscal
         </div>
-        <div class="numeronota">
-          <input type="text">
-        </div>  
+        <div class="text-widget3">
+          <input type="text" name="notafiscal" cols="30" placeholder=""></textarea>
+        </div>
+
         <div>
           <input type="button" value="Enviar">
         </div>
@@ -86,7 +86,8 @@
       const btn = document.querySelector("button");
       const post = document.querySelector(".post");
       const widget = document.querySelector(".star-widget");
-      const widget2 = document.querySelector(".star-widget2");
+      const widget2 = document.querySelector(".rate-widget2");
+      const widget3 = document.querySelector(".text-widget3");
       const editBtn = document.querySelector(".edit");
       btn.onclick = ()=>{
         widget.style.display = "none";
