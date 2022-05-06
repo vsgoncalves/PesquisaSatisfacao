@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="icon" href="img/favicon/cg.ico">
         <title> Pesquisa de atendimento Carbografite </title>
-        
     </head>
   <body>
     <div class="container">
@@ -18,23 +17,23 @@
       
       <div class="Perguntas">
         <p>Obrigado por escolher a Carbografite!</p>
-        <p>Sua opinião é muito importante :)! </p>
+        <p>Sua opinião é muito importante :) </p>
       </div>  
-      <form action="#">
+      <form action="#" onsubmit="cadastroUsuario()">
          <div>
           1 - Como foi sua experiência de compra com a Carbografite?
         </div>
         <div class="Perguntas">
           <div class="star-widget">
-            <input type="radio" name="star" id="star-5">
+            <input type="radio" name="star" id="star-5" value="5">
             <label for="star-5" class="fas fa-star"></label>
-            <input type="radio" name="star" id="star-4">
+            <input type="radio" name="star" id="star-4" value="4">
             <label for="star-4" class="fas fa-star"></label>
-            <input type="radio" name="star" id="star-3">
+            <input type="radio" name="star" id="star-3" value="3">
             <label for="star-3" class="fas fa-star"></label>
-            <input type="radio" name="star" id="star-2">
+            <input type="radio" name="star" id="star-2" value="2">
             <label for="star-2" class="fas fa-star"></label>
-            <input type="radio" name="star" id="star-1">
+            <input type="radio" name="star" id="star-1" value="1">
             <label for="star-1" class="fas fa-star"></label>
             <header></header>
           </div>
@@ -44,7 +43,7 @@
         </div>
         <div class="Perguntas">
           <div class="textarea">
-            <textarea cols="30" placeholder=""></textarea>
+            <textarea name="comentario" cols="30" placeholder=""></textarea>
           </div>
         </div>
         <div >
@@ -52,25 +51,25 @@
         </div>
         <div class="Perguntas">
           <div class="rate-widget2">
-            <input type="radio" name="rate" id="rate-1">
+            <input type="radio" name="rate" id="rate-1" value="1">
             <label for="rate-1" ><div class="numero numero1">1</div></label>
-            <input type="radio" name="rate" id="rate-2">
+            <input type="radio" name="rate" id="rate-2" value="2">
             <label for="rate-2" ><div class="numero numero2">2</div></label>
-            <input type="radio" name="rate" id="rate-3">
+            <input type="radio" name="rate" id="rate-3" value="3">
             <label for="rate-3" ><div class="numero numero3">3</div></label>
-            <input type="radio" name="rate" id="rate-4">
+            <input type="radio" name="rate" id="rate-4" value="4">
             <label for="rate-4" ><div class="numero numero4">4</div></label>
-            <input type="radio" name="rate" id="rate-5">
+            <input type="radio" name="rate" id="rate-5" value="5">
             <label for="rate-5" ><div class="numero numero5">5</div></label>
-            <input type="radio" name="rate" id="rate-6">
+            <input type="radio" name="rate" id="rate-6" value="6">
             <label for="rate-6" ><div class="numero numero6">6</div></label>
-            <input type="radio" name="rate" id="rate-7">
+            <input type="radio" name="rate" id="rate-7" value="7">
             <label for="rate-7" ><div class="numero numero7">7</div></label>
-            <input type="radio" name="rate" id="rate-8">
+            <input type="radio" name="rate" id="rate-8" value="8">
             <label for="rate-8" ><div class="numero numero8">8</div></label>
-            <input type="radio" name="rate" id="rate-9">
+            <input type="radio" name="rate" id="rate-9" value="9">
             <label for="rate-9" ><div class="numero numero9">9</div></label>
-            <input type="radio" name="rate" id="rate-10">
+            <input type="radio" name="rate" id="rate-10" value="10">
             <label for="rate-10" ><div class="numero numero10">10</div></label>
           </div>
         </div>
@@ -83,10 +82,10 @@
           </div>
         </div>
         <div>
-          <input type="button" class="btn" value="Enviar">
+          <button type="submit" class="btn">Enviar</button>
         </div>
       </form>  
     </div>
-    
+   <script src="js/post.js"></script>
   </body>
 </html>
