@@ -16,7 +16,7 @@ app.route('/').post( (req,res) => console.log(req.body) )
 //    res.send(req.params.identificador)
 //})
 
-//app.route('/').get( (req,res) => res.send("oi"))
+app.route('/').get( (req,res) => res.send("oi"))
 
 //app.route('/:comentario').get( (req,res) => res.send( req.params.comentario ))
 
