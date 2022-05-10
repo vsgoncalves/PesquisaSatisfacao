@@ -13,13 +13,13 @@ function fazPost(url, body) {
     return request.responseText
 }
 
-function cadastraUsuario() {
+function cadastroUsuario() {
     event.preventDefault()
-    let url = "http://127.0.0.1:5000/users"
-    let star = document.getElementById("star").valeu
-    let comentario = document.getElementById("comentario").value
-    let rate = document.getElementById("rate").value
-    let notafiscal = document.getElementById("notafiscal").value
+    let url = "http://127.0.0.1:3000"
+    let star = document.querySelector('input[name="star"]:checked').value
+    let comentario = document.querySelector('textarea[name="comentario"]').value
+    let rate = document.querySelector('input[name="rate"]:checked').value
+    let notafiscal = document.querySelector('input[name="notafiscal"]').value
     console.log(star)
     console.log(comentario)
     console.log(rate)
