@@ -1,6 +1,9 @@
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('notaFiscal');
+document.getElementById('notaFiscalLabel').innerHTML = myParam
+document.getElementById('notaFiscal').value = myParam
 
 function fazPost(url, body) {
-    console.log("Body=", body)
     let request = new XMLHttpRequest()
     request.open("POST", url, true)
     request.setRequestHeader("Content-type", "application/json")
@@ -15,24 +18,27 @@ function fazPost(url, body) {
 
 function cadastroUsuario() {
     event.preventDefault()
-    let url = "http://127.0.0.1:3000"
-    let star = document.querySelector('input[name="star"]:checked').value
-    let comentario = document.querySelector('textarea[name="comentario"]').value
-    let rate = document.querySelector('input[name="rate"]:checked').value
-    let notafiscal = document.querySelector('input[name="notafiscal"]').value
-    console.log(star)
-    console.log(comentario)
-    console.log(rate)
-    console.log(notafiscal)
-
-    body = {
-        "Experiência": star,
-        "Comentário": comentario,
-        "Voto": rate,
-        "Número da nota fiscal": notafiscal,
-
+    console.log("Cadastrando pesquisas")
+    if (!document.querySelector('input[name="rate"]:checked')) {
+        alert('Por favor, selecione uma recomendação');
+        return false
+    }
+    if (!document.querySelector('input[name="star"]:checked')) {
+        alert('Por favor, selecione uma estrela');
+        return false
     }
 
+    let url = "http://127.0.0.1:3000/pesquisa"
+    let experienciaCompra = document.querySelector('input[name="star"]:checked').value
+    let comentario = document.querySelector('textarea[name="comentario"]').value
+    let recomendacao = document.querySelector('input[name="rate"]:checked').value
+    let notaFiscal = document.querySelector('input[name="notaFiscal"]').value
+    body = {
+        "experienciaCompra": experienciaCompra,
+        "comentario": comentario,
+        "recomendacao": recomendacao,
+        "notaFiscal": notaFiscal,
+    }
     fazPost(url, body)
 }
 
