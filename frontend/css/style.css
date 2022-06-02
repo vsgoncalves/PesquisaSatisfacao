@@ -32,6 +32,28 @@ html,body{
   flex-direction: column;
 }
 
+.container2{
+  max-width: 390px;
+	display: flex;
+  padding-bottom: 30px;
+}
+
+.item{
+  width: 50%;
+  margin: 5px;
+  align-items: right;
+	font-size: 1.0em;
+}
+
+.item2{
+  width: 50%;
+  margin: 5px;
+	text-align: right;
+  align-items: right;
+  
+	font-size: 1.0em;
+}
+
 .container .star-widget input{
   display: none;
 }
@@ -158,7 +180,6 @@ form .btn{
 form .btn:hover{
   background: #757575;
 }
-
 .numero {
   width: 30px;
   height:30px;
@@ -166,50 +187,24 @@ form .btn:hover{
   font-size: 20px;
   text-align: center;
 }
-
-.numero1 {
+.numeroVermelho {
   background-color:#d62128;
 }
-
-.numero2 {
-  background-color:#ea5426;
- }
-
- .numero3 {
-  background-color:#ed6f25;
- }
-
- .numero4 {
-  background-color:#f7a726;
- }
-
- .numero5 {
-  background-color:#fec929;
- }
-
- .numero6 {
+.numeroAmarelo{
   background-color:#ecdc0b;
  }
-
- .numero7 {
-  background-color:#e5e244;
- }
-
- .numero8 {
-  background-color:#c4d334;
- }
-
- .numero9 {
-  background-color:#afcb3a;
- }
-
- .numero10 {
+ .numeroVerde {
   background-color:#68b64f;
  }
-
  .Perguntas {
   margin-bottom: 40px;
   margin-top: 10px;
  }
+
+ .Perguntas2{
+  margin-bottom: 0px;
+  margin-top: 10px;
+ }
+
 
   

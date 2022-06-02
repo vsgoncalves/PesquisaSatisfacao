@@ -19,17 +19,18 @@ function fazPost(url, body) {
 function cadastroUsuario() {
     event.preventDefault()
     console.log("Cadastrando pesquisas")
-    if (!document.querySelector('input[name="rate"]:checked')) {
-        alert('Por favor, selecione uma recomendação');
+    if (!document.querySelector('input[name="rate1"]:checked')) {
+        alert('Por favor, selecione uma nota para experiência');
         return false
     }
-    if (!document.querySelector('input[name="star"]:checked')) {
-        alert('Por favor, selecione uma estrela');
+    if (!document.querySelector('input[name="rate"]:checked')) {
+        alert('Por favor, selecione uma nota para recomendação ao amigo.');
         return false
     }
 
     let url = "http://127.0.0.1:3000/pesquisa"
-    let experienciaCompra = document.querySelector('input[name="star"]:checked').value
+    //let experienciaCompra = document.querySelector('input[name="star"]:checked').value
+    let experienciaCompra = document.querySelector('input[name="rate1"]:checked').value
     let comentario = document.querySelector('textarea[name="comentario"]').value
     let recomendacao = document.querySelector('input[name="rate"]:checked').value
     let notaFiscal = document.querySelector('input[name="notaFiscal"]').value
