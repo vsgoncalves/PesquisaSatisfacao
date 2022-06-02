@@ -1,6 +1,9 @@
 'use strict'
 const pgp = require('pg-promise')();
-const db = pgp("postgres://postgres:123456@localhost:5432/pesquisa");
+//const db = pgp("postgres://postgres:123456@localhost:5432/pesquisa"); // base de dados localhost
+const db = pgp("postgres://satisf_desev:pesquisa01@@satisf_desev.postgresql.dbaas.com.br:5432/satisf_desev"); // base de dados desenvolvimento
+
+
 
 // POST
 exports.adiciona_uma_pesquisa = function(req, res) {
