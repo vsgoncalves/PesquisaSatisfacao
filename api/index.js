@@ -26,7 +26,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-var routes = require('./routes/pesquisaRoutes');
+var routes = require('./routes/pesquisaroutes');
 routes(app);
 
 app.listen(port, function () {
