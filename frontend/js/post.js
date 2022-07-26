@@ -10,10 +10,14 @@ function fazPost(url, body) {
     request.send(JSON.stringify(body))
 
     request.onload = function() {
+        window.location = "agradecimento.html";
         console.log(this.responseText)
     }
-
+    request.onerror = function() {
+        console.log("Ocorreu um erro")
+    }
     return request.responseText
+
 }
 
 function cadastroUsuario() {
@@ -28,7 +32,7 @@ function cadastroUsuario() {
         return false
     }
 
-    let url = "http://127.0.0.1:3000/pesquisa"
+    let url = "https://ec2-23-20-20-28.compute-1.amazonaws.com/api/pesquisa"
     //let experienciaCompra = document.querySelector('input[name="star"]:checked').value
     let experienciaCompra = document.querySelector('input[name="rate1"]:checked').value
     let comentario = document.querySelector('textarea[name="comentario"]').value
