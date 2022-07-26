@@ -6,8 +6,8 @@
         <meta name="author" content="Vinicius Gonçalves">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <title> Pesquisa de atendimento Carbografite </title>
+        
     </head>
   <body>
     <div class="container">
@@ -16,7 +16,7 @@
       </div>
       <form action="#" onsubmit="cadastroUsuario()">
         <div><br>
-          1 - Como foi sua experiência de compra com a Carbografite?
+          Como foi sua experiência de compra com a Carbografite?
         </div>
         <!--<div class="Perguntas">
           <div class="star-widget">
@@ -33,34 +33,38 @@
             <header></header>
           </div>
         </div>-->
-        <div class="Perguntas">
+        <div class="Perguntas2">
           <div class="rate-widget2">
-            <input type="radio" name="rate1" id="rate-11" value="11">
+            <input type="radio" name="rate1" id="rate-11" value="0">
             <label for="rate-11" ><div class="numero numeroVermelho">0</div></label>
-            <input type="radio" name="rate1" id="rate-12" value="12">
+            <input type="radio" name="rate1" id="rate-12" value="1">
             <label for="rate-12" ><div class="numero numeroVermelho">1</div></label>
-            <input type="radio" name="rate1" id="rate-13" value="13">
+            <input type="radio" name="rate1" id="rate-13" value="2">
             <label for="rate-13" ><div class="numero numeroVermelho">2</div></label>
-            <input type="radio" name="rate1" id="rate-14" value="14">
+            <input type="radio" name="rate1" id="rate-14" value="3">
             <label for="rate-14" ><div class="numero numeroVermelho">3</div></label>
-            <input type="radio" name="rate1" id="rate-15" value="15">
+            <input type="radio" name="rate1" id="rate-15" value="4">
             <label for="rate-15" ><div class="numero numeroVermelho">4</div></label>
-            <input type="radio" name="rate1" id="rate-16" value="16">
+            <input type="radio" name="rate1" id="rate-16" value="5">
             <label for="rate-16" ><div class="numero numeroVermelho">5</div></label>
-            <input type="radio" name="rate1" id="rate-17" value="17">
+            <input type="radio" name="rate1" id="rate-17" value="6">
             <label for="rate-17" ><div class="numero numeroVermelho">6</div></label>
-            <input type="radio" name="rate1" id="rate-18" value="18">
-            <label for="rate-18" ><div class="numero numeroVermelho">7</div></label>
-            <input type="radio" name="rate1" id="rate-19" value="19">
+            <input type="radio" name="rate1" id="rate-18" value="7">
+            <label for="rate-18" ><div class="numero numeroAmarelo">7</div></label>
+            <input type="radio" name="rate1" id="rate-19" value="8">
             <label for="rate-19" ><div class="numero numeroAmarelo">8</div></label>
-            <input type="radio" name="rate1" id="rate-20" value="20">
-            <label for="rate-20" ><div class="numero numeroAmarelo">9</div></label>
-            <input type="radio" name="rate1" id="rate-21" value="21">
+            <input type="radio" name="rate1" id="rate-20" value="9">
+            <label for="rate-20" ><div class="numero numeroVerde">9</div></label>
+            <input type="radio" name="rate1" id="rate-21" value="10">
             <label for="rate-21" ><div class="numero numeroVerde">10</div></label>
           </div>
         </div>
+        <div class="container2">
+          <div class="item">Muito ruim</div>
+          <div class="item2">Muito boa</div>
+        </div>
         <div >
-          2 - Comentários
+          Comentários
         </div>
         <div class="Perguntas">
           <div class="textarea">
@@ -68,7 +72,7 @@
           </div>
         </div>
         <div>
-          3 - Em uma escala de 1 a 10, qual a probabilidade de<br> você recomendar a Carbografite a um amigo?
+          Em uma escala de 0 a 10, qual a probabilidade de<br> você recomendar a Carbografite a um amigo?
         </div>
         <div class="Perguntas2">
           <div class="rate-widget2">
@@ -87,11 +91,11 @@
             <input type="radio" name="rate" id="rate-6" value="6">
             <label for="rate-6" ><div class="numero numeroVermelho">6</div></label>
             <input type="radio" name="rate" id="rate-7" value="7">
-            <label for="rate-7" ><div class="numero numeroVermelho">7</div></label>
+            <label for="rate-7" ><div class="numero numeroAmarelo">7</div></label>
             <input type="radio" name="rate" id="rate-8" value="8">
             <label for="rate-8" ><div class="numero numeroAmarelo">8</div></label>
             <input type="radio" name="rate" id="rate-9" value="9">
-            <label for="rate-9" ><div class="numero numeroAmarelo">9</div></label>
+            <label for="rate-9" ><div class="numero numeroVerde">9</div></label>
             <input type="radio" name="rate" id="rate-10" value="10">
             <label for="rate-10" ><div class="numero numeroVerde">10</div></label>
           </div>
@@ -101,12 +105,13 @@
           <div class="item2">Recomendo Muito</div>
         </section>
         <div>
-          4 - Nota fiscal
+          Nota fiscal
         </div>
         <div class="Perguntas">
           <div class="text">
-            <input type="hidden" id="notaFiscal" name="notaFiscal">
-            <label id="notaFiscalLabel"></label>
+            <input type="text" id="notaFiscal" name="notaFiscal" disabled="disabled">
+            <label id="notaFiscalLabel" hidden="true"></label>
+            
           </div>
         </div>
         <div>
