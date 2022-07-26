@@ -9,7 +9,7 @@ port = process.env.PORT || 3000;
 app.use(express.json())
 
 var corsOptions = {
-  origin: 'https://www.carbografite.com.br/pesquisadesatisfacao/index.html',
+  origin: 'https://carbografite.com.br/pesquisadesatisfacao/index.html',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 app.use(cors(corsOptions))
