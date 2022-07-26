@@ -6,6 +6,7 @@ document.getElementById('notaFiscal').value = myParam
 function fazPost(url, body) {
     let request = new XMLHttpRequest()
     request.open("POST", url, true)
+    request.setRequestHeader('Accept', '*/*')
     request.setRequestHeader("Content-type", "application/json")
     request.send(JSON.stringify(body))
 
